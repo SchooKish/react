@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    padding: 0;
+    
+}
+
+#app {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+.message {
+    width: 500px;
+    
+}
+
+.message span:first-child {
+}
+
+.classbot {
+
+}
+
+.classme {
+  
+    display: flex;
+    justify-content: flex-end;
+}
+
+.form {
+    
+}
+
+.input {
+    width: 300px;
+    height: 50px;
+}
+
+.button {
+    height: 50px;
+    width: 100px;
+    background: lightblue;
+    
+}
+
