@@ -1,0 +1,22 @@
+import { Link } from "react-router-dom";
+import React from "react";
+
+export default function ChatsList({ chats, chatId, onAddChat }) {
+  console.log(chatId);
+  return (
+    <div>
+      {chats.map((chat, i) => (
+        <div key={i}>
+          <Link to={`/chats/${chat.id}`}>
+            <b style={{ color: chat.id === chatId ? "#000000" : "grey" }}>
+              {chat.name}
+            </b>
+          </Link>
+        </div>
+      ))}
+      <div onClick={onAddChat} style={{ cursor: "pointer" }}>
+        Add Chat
+      </div>
+    </div>
+  );
+}
